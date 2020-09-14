@@ -13,7 +13,7 @@ const Progress = (props) => {
     return (  
 
 
-              <h2>Question {props.currentQuestion} of {props.total}</h2>
+              <h2>Pregunta {props.currentQuestion} de {props.total}</h2>
 
     );
 

@@ -39,7 +39,7 @@ const {currentQuestion, currentAnswer, answers,showResults,error} = state;
   const questions = [
     {
       id: 1,
-      question: "Como se llama el perro de tintín",
+      question: "¿Como se llama el perro de tintín?",
       answer_a: "Milú",
       answer_b: "Coco",
       answer_c: "Rintintín",
@@ -49,22 +49,22 @@ const {currentQuestion, currentAnswer, answers,showResults,error} = state;
 
     {
       id: 2,
-      question: "Which statement about Hooks is not true?",
-      answer_a: "Hooks arer still in beta and not availoable yet",
-      answer_b: "Hooks arer still in beta and not availoable yet",
-      answer_c: "Hooks arer still in beta and not availoable yet",
-      answer_d: "Hooks arer still in beta and not availoable yet",
-      correct_answer: "a"
+      question: "¿Cómo se llama el restaurante de Bob Esponja?",
+      answer_a: "Sardina divertida.",
+      answer_b: "Gamba peleona.",
+      answer_c: "Crustáceo crujiente.",
+      answer_d: "Langosta rápida.",
+      correct_answer: "c"
     },
 
     {
       id: 3,
-      question: "Which statement about Hooks is not true?",
-      answer_a: "Hooks arer still in beta and not availoable yet",
-      answer_b: "Hooks arer still in beta and not availoable yet",
-      answer_c: "Hooks arer still in beta and not availoable yet",
-      answer_d: "Hooks arer still in beta and not availoable yet",
-      correct_answer: "a"
+      question: "¿Cómo se llamaba el futbolista que sufría del corazón en Oliver y Benji?",
+      answer_a: "Philip Ross.",
+      answer_b: "Julian Diamond.",
+      answer_c: "Mark Lenders.",
+      answer_d: "Julian Ross.",
+      correct_answer: "d"
     }
   ];
 
@@ -146,10 +146,10 @@ return answers.map(answer => {
 return(
   <div className="container results">
 
-    <h2>Results</h2>
+    <h2>Resultados</h2>
          <ul>{renderResults()}</ul>
     <button onClick={restart} className="btn btn-primary">
-        Restart
+        Reinicio
       </button>
   </div>
 )
@@ -173,7 +173,7 @@ return(
         dispatch={dispatch}
       />
       <button onClick={next} className="btn btn-primary">
-        Confirm and Continue
+        Confirma y Continua
       </button>
     </div>
   );
